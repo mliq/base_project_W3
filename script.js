@@ -17,11 +17,10 @@ $(document).ready(function(){
                 cityData = data;
                 var firstCity = data.locations[0].location;
                 console.log(firstCity);
-                $('.more-stuff').children('.location-name').append("<p>" + firstCity + "</p>");
+                $('.location-name').append("<p>" + firstCity + "</p>");
             });
         } else {
             console.log(cityData.locations[0].population);
-            console.log();
         }
 
     });
